@@ -61,6 +61,13 @@ const Navbar = ({ unread }: { unread: number }) => {
         activeIcon: 'support/user/userFill',
         link: '/account',
         activeLink: ['/account']
+      },
+      {
+        label: t('navbar.Tuning'),
+        icon: 'core/app/aiLight',
+        activeIcon: 'core/app/aiFill',
+        link: '/tuning',
+        activeLink: ['/tuning']
       }
     ],
     [lastChatAppId, lastChatId, t]

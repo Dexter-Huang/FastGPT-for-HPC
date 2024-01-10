@@ -6,6 +6,7 @@ ARG name
 ARG proxy
 
 RUN [ -z "$proxy" ] || sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
+RUN npm config set registry https://registry.npmmirror.com
 RUN apk add --no-cache libc6-compat && npm install -g pnpm@8.6.0
 # if proxy exists, set proxy
 RUN [ -z "$proxy" ] || pnpm config set registry https://registry.npm.taobao.org
@@ -26,6 +27,7 @@ WORKDIR /app
 ARG proxy
 
 RUN [ -z "$proxy" ] || sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
+RUN npm config set registry https://registry.npmmirror.com
 RUN apk add --no-cache libc6-compat && npm install -g pnpm@8.6.0
 # if proxy exists, set proxy
 RUN [ -z "$proxy" ] || pnpm config set registry https://registry.npm.taobao.org
@@ -48,7 +50,7 @@ COPY ./projects/$name ./projects/$name
 COPY --from=mainDeps /app/projects/$name/node_modules ./projects/$name/node_modules
 
 RUN [ -z "$proxy" ] || sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
-
+RUN npm config set registry https://registry.npmmirror.com
 RUN apk add --no-cache libc6-compat && npm install -g pnpm@8.6.0
 RUN pnpm --filter=$name build
 
@@ -73,7 +75,7 @@ COPY --from=builder /app/projects/$name/next.config.js /app/projects/$name/next.
 COPY --from=builder --chown=nextjs:nodejs /app/projects/$name/.next/standalone /app/
 COPY --from=builder --chown=nextjs:nodejs /app/projects/$name/.next/static /app/projects/$name/.next/static
 # copy package.json to version file
-COPY --from=builder /app/projects/$name/package.json ./package.json 
+COPY --from=builder /app/projects/$name/package.json ./package.json
 # copy woker
 COPY --from=workerDeps /app/worker /app/worker
 # copy config

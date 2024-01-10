@@ -856,7 +856,8 @@
     "Module": "模块",
     "Plugin": "插件",
     "Store": "应用市场",
-    "Tools": "工具"
+    "Tools": "工具",
+    "Tuning": "微调"
   },
   "openapi": {
     "app key tips": "这些 key 已有当前应用标识，具体使用可参考文档",
@@ -929,6 +930,15 @@
   "template": {
     "Quote Content Tip": "该配置只有传入引用内容（知识库搜索）时生效。\n可以自定义引用内容的结构，以更好的适配不同场景。可以使用一些变量来进行模板配置:\n{{q}} - 检索内容, {{a}} - 预期内容, {{source}} - 来源，{{sourceId}} - 来源文件名，{{index}} - 第n个引用，{{score}} - 该引用的得分(0-1)，他们都是可选的，下面是默认值：\n{{default}}",
     "Quote Prompt Tip": "该配置只在知识库搜索时生效。\n可以用 {{quote}} 来插入引用内容模板，使用 {{question}} 来插入问题。下面是默认值：\n{{default}}"
+  },
+  "tuning": {
+    "Tuning Record": "微调记录",
+    "key tips": "以下为相关微调记录",
+    "Tuning Desc": "微调是提高模型性能的一种方式。您可以使用微调来调整模型的参数，以达到最佳性能。",
+    "Confirm Delete": "确认删除该微调任务？",
+    "DataSet Online Maker": "在线数据集标注",
+    "Online Tuning": "在线微调",
+    "quantization": "量化模型"
   },
   "user": {
     "Account": "账号",
