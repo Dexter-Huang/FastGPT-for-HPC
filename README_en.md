@@ -10,7 +10,7 @@
   <a href="./README_ja.md">日语</a>
 </p>
 
-FastGPT is a knowledge-based Q&A system built on the LLM, offers out-of-the-box data processing and model invocation capabilities, allows for workflow orchestration through Flow visualization!
+FastGPT is a knowledge-based Q&A system built on the LLM，offers out-of-the-box data processing and model invocation capabilities，allows for workflow orchestration through Flow visualization！
 
 </div>
 
@@ -36,7 +36,7 @@ https://github.com/labring/FastGPT/assets/15308462/7d3a38df-eb0e-4388-9250-2409b
 
 ## 🛸 Use Cloud Services
 
-Cloud: [fastgpt.in](https://fastgpt.in/)
+Cloud：[fastgpt.in](https://fastgpt.in/)
 
 | | |
 | ---------------------------------- | ---------------------------------- |
@@ -49,7 +49,7 @@ Cloud: [fastgpt.in](https://fastgpt.in/)
 
 ## 💡 Features
 
-1. Powerful visual workflows: Effortlessly craft AI applications
+1. Powerful visual workflows：Effortlessly craft AI applications
 
    - [x] Simple mode on deck - no need for manual arrangement
    - [x] User dialogue pre-guidance
@@ -68,7 +68,7 @@ Cloud: [fastgpt.in](https://fastgpt.in/)
 
    - [x] Reuse and mix multiple knowledge bases
    - [x] Track chunk modifications and deletions
-   - [x] Supports manual entries, direct segmentation, and QA split imports
+   - [x] Supports manual entries，direct segmentation，and QA split imports
    - [x] Supports URL fetching and batch CSV imports
    - [x] Supports Set unique vector models for knowledge bases
    - [x] Store original files
@@ -98,13 +98,13 @@ Cloud: [fastgpt.in](https://fastgpt.in/)
 
 ## 👨‍💻 Development
 
-Project tech stack: NextJs + TS + ChakraUI + Mongo + Postgres (Vector plugin)
+Project tech stack：NextJs + TS + ChakraUI + Mongo + Postgres (Vector plugin)
 
 - **⚡ Deployment**
 
   [![](https://cdn.jsdelivr.us/gh/labring-actions/templates@main/Deploy-on-Sealos.svg)](https://cloud.sealos.io/?openapp=system-fastdeploy%3FtemplateName%3Dfastgpt)
 
-  Give it a 2-4 minute wait after deployment as it sets up the database. Initially, it might be a tad slow since we're using the basic settings.
+  Give it a 2-4 minute wait after deployment as it sets up the database。Initially，it might be a tad slow since we're using the basic settings。
 
 - [Getting Started with Local Development](https://doc.fastgpt.in/docs/development)
 - [Deploying FastGPT](https://doc.fastgpt.in/docs/installation)
@@ -138,10 +138,10 @@ Project tech stack: NextJs + TS + ChakraUI + Mongo + Postgres (Vector plugin)
 
 ## 💪 Related Projects
 
-- [Laf: 3-minute quick access to third-party applications](https://github.com/labring/laf)
-- [Sealos: Rapid deployment of cluster applications](https://github.com/labring/sealos)
-- [One API: Multi-model management, supports Azure, Wenxin Yiyuan, etc.](https://github.com/songquanpeng/one-api)
-- [TuShan: Build a backend management system in 5 minutes](https://github.com/msgbyte/tushan)
+- [Laf：3-minute quick access to third-party applications](https://github.com/labring/laf)
+- [Sealos：Rapid deployment of cluster applications](https://github.com/labring/sealos)
+- [One API：Multi-model management，supports Azure，Wenxin Yiyuan，etc.](https://github.com/songquanpeng/one-api)
+- [TuShan：Build a backend management system in 5 minutes](https://github.com/msgbyte/tushan)
 
 <a href="#readme">
     <img src="https://img.shields.io/badge/-Back_to_Top-7d09f1.svg" alt="#" align="right">
@@ -149,7 +149,7 @@ Project tech stack: NextJs + TS + ChakraUI + Mongo + Postgres (Vector plugin)
 
 ## 🤝 Third-party Ecosystem
 
-- [luolinAI: Enterprise WeChat bot, ready to use](https://github.com/luolin-ai/FastGPT-Enterprise-WeChatbot)
+- [luolinAI：Enterprise WeChat bot，ready to use](https://github.com/luolin-ai/FastGPT-Enterprise-WeChatbot)
 
 <a href="#readme">
     <img src="https://img.shields.io/badge/-Back_to_Top-7d09f1.svg" alt="#" align="right">
